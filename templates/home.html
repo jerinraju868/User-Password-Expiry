@@ -1,0 +1,19 @@
+{%  extends 'index.html' %}
+{% block content %}
+<div class="container" style="display: flex;align-items: center;justify-content: center;margin-top: 50px;">
+  <div class="card"  style=" border-radius: 1rem;width: 100%;">
+    <div class="card-header" style="text-align: center;">
+      <h2>HOME PAGE</h2>
+    </div>
+    <div class="card-body">
+      <h3>Hi {{request.user.username}}</h3><br><br>
+      <h5>welcome to home page</h5><br>
+      <p>&emsp; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <div class="card-footer" style="text-align: center;">
+      <span><marquee>Designed by <i>@JerinRaju</i></marquee></span>
+    </div>
+  </div>
+</div>
+{% endblock %}

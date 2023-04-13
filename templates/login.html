@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% block content %}
+<br><br>
+<div class="container" style="display: flex;align-items: center;justify-content: center;margin-top: 50px;">
+  <div class="card"  style="text-align: center; border-radius: 1rem; width: 500px;">
+    <div class="card-header">
+      <h2>LOGIN PAGE</h2>
+    </div>
+    <div class="card-body">
+      <div>
+        {% for message in messages %}
+        <label style="color: red; font-style: italic;">{{message}}</label>  
+        {% endfor %}
+    </div><br>
+      <form method="post">
+        {% csrf_token %}
+        <input type="text" name="uname" placeholder="Username" class="form-control" required><br>
+        <input type="password" name="pwd" placeholder="********" class="form-control" required><br>
+        <input type="submit" value="Login" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
